@@ -1,127 +1,46 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f0f0f0; /* gris claro */
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WHILOBUS - Catálogo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>WHILOBUS</h1>
+    <h2 class="subtitulo">HACEMOS REALIDAD CADA IDEA</h2>
+  </header>
 
-header {
-  background: #444;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-}
+  <main>
+    <section class="product-grid">
 
-h1 {
-  font-size: 2.2rem;
-  margin: 0;
-}
+<!-- Producto 1 -->
+<a href="producto1.html" class="product-card">
+  <img src="img/ploteado1.jpeg" alt="Ploteado de flota" />
+  <h2>Ploteado de flota</h2>
+  <span class="price">₲------</span>
+</a>
 
-.subtitulo {
-  font-size: 1.2rem;
-  margin-top: 0.3rem;
-  color: #ddd;
-}
+<!-- Producto 2 -->
+<a href="producto2.html" class="product-card">
+  <img src="img/ploteado2.jpeg" alt="Ploteado de flota" />
+  <h2>Ploteado de flota</h2>
+  <span class="price">₲------</span>
+</a>
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+      </div>
 
-.product-card {
-  background: white;
-  border: 1px solid #ccc;
-  padding: 1rem;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+    </section>
+  </main>
 
-.product-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
-h2 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-}
-
-.desc-title {
-  font-size: 1rem;
-  margin: 0.5rem 0 0.3rem;
-  color: #555;
-}
-
-.bullet {
-  color: #444;
-  margin-right: 6px;
-}
-
-.price {
-  display: block;
-  margin: 0.5rem 0;
-  font-weight: bold;
-  color: #008000;
-}
-
-.whatsapp-btn {
-  background: #25d366;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 0.5rem;
-  transition: background 0.3s;
-}
-
-.whatsapp-btn:hover {
-  background: #1ebe5d;
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #ddd;
-}
-
-.social-icons {
-  margin-top: 0.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.social-icons img {
-  width: 24px;
-  height: 24px;
-  filter: brightness(0) saturate(100%) invert(20%);
-  transition: transform 0.2s ease;
-}
-
-.social-icons img:hover {
-  transform: scale(1.1);
-}
-.product-detail {
-  max-width: 600px;
-  margin: 2rem auto;
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.product-detail img {
-  width: 100%;
-  max-height: 300px;
-  object-fit: contain; /* <- antes decía 'cover' */
-  border-radius: 8px;
-}
+  <footer>
+    <p>&copy; 2025 WHILOBUS</p>
+    <div class="social-icons">
+      <a href="#" target="_blank"><img src="img/facebook.svg" alt="Facebook"></a>
+      <a href="#" target="_blank"><img src="img/instagram.svg" alt="Instagram"></a>
+      <a href="#" target="_blank"><img src="img/tiktok.svg" alt="TikTok"></a>
+    </div>
+  </footer>
+</body>
+</html>
