@@ -218,3 +218,17 @@ footer {
     display: block; /* Muestra el menú cuando la clase "active" esté presente */
   }
 }
+.imagen-inicio img {
+  width: 100%; /* Hace que el logo ocupe el 100% del ancho disponible */
+  height: auto; /* Mantiene la proporción del logo */
+  max-width: 300px; /* Limita el tamaño máximo del logo para pantallas grandes */
+  margin: 0 auto; /* Centra el logo en la página */
+  display: block; /* Asegura que se muestre como un bloque */
+}
+
+/* Ajustes adicionales para pantallas pequeñas */
+@media (max-width: 768px) {
+  .imagen-inicio img {
+    max-width: 200px; /* Limita el tamaño máximo del logo en móviles */
+  }
+}
