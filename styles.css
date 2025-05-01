@@ -1,0 +1,124 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f1f1f1;  /* Gris claro */
+  padding: 10px;
+}
+
+.header-logo-mobile {
+  text-align: center;  /* Centra el contenido dentro del contenedor */
+  width: 100%;  /* Asegura que ocupe todo el ancho disponible */
+}
+
+.header-logo-mobile img {
+  width: 30%;  /* Ajusta el tamaño del logo al 30% del ancho */
+  max-width: 75px;  /* Limita el tamaño máximo del logo */
+  height: auto;  /* Mantiene la proporción */
+  margin: 0 auto;  /* Centra la imagen */
+  display: block;  /* Elimina el espacio debajo de la imagen */
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+footer {
+  padding: 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+footer .social-icons a img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;  /* Reduce el espacio entre las líneas */
+    padding: 8px;  /* Menos padding */
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  
+  .hamburger {
+    width: 25px;  /* Reduce el ancho */
+    height: 2px;   /* Reduce el grosor */
+    background-color: #333;
+  }
+  
+  .hamburger::before,
+  .hamburger::after {
+    content: '';
+    width: 25px;  /* Reduce el ancho de las otras líneas */
+    height: 2px;   /* Reduce el grosor de las otras líneas */
+    background-color: #333;
+    display: block;
+  }
+  
+  .hamburger::before {
+    transform: translateY(-6px);
+  }
+  
+  .hamburger::after {
+    transform: translateY(6px);
+  }   
+
+  .navbar a {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+
+  .navbar a:hover {
+    background-color: #f0f0f0;
+  }
+}
+.imagen-inicio img {
+  width: 90%;  /* Ajusta el logo al 90% del ancho de la pantalla */
+  height: auto; /* Mantiene la proporción */
+  max-width: 350px; /* Asegura que el logo no crezca más allá de 350px */
+  display: block; /* Elimina el espacio adicional debajo de la imagen */
+  margin: 0 auto; /* Centra la imagen */
+}
+
+
