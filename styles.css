@@ -1,0 +1,93 @@
+/* Estilos básicos */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-logo-mobile img {
+  max-width: 100px;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+footer {
+  padding: 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+footer .social-icons a img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Estilos móviles */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+  }
+
+  .navbar a {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+  }
+
+  .navbar a:hover {
+    background-color: #f0f0f0;
+  }
+}
