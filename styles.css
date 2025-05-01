@@ -1,0 +1,227 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background: #e6e6e6;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  text-decoration: none;
+  color: black;
+}
+
+.price {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  color: #008000;
+  text-decoration: none;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+  transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ddd;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0.2);
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.detalle-producto {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.detalle-producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.descripcion {
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+.descripcion li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.product-description {
+  list-style: none;
+  padding-left: 0;
+}
+
+.product-description li::before {
+  content: "● ";
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #e6e6e6;
+  padding: 0.5rem 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.navbar ul li {
+  margin: 0 10px;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul li.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navbar ul li:not(:last-child) {
+  border-right: 2px solid #000;
+  padding-right: 10px;
+  height: 100%;
+}
+
+.navbar ul li a {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  transform: scale(1.1);
+  color: #d3d3d3; /* gris claro */
+}
+
+.navbar ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.imagen-inicio {
+  text-align: center;
+  padding: 2rem;
+}
+
+.imagen-inicio img {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+
+/* Animación de entrada para el logo */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------------- RESPONSIVE ------------------- */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navbar ul li {
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar ul li:not(:last-child) {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10px;
+  }
+
+  .navbar ul li a {
+    font-size: 1.2rem;
+  }
+}

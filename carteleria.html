@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cartelería - WHILOBUS</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="carteleria.html">Cartelería</a></li>
+        <li><a href="adhesivos.html">Adhesivos</a></li>
+        <li><a href="serigrafias.html">Serigrafías</a></li>
+        <li><a href="personalizados.html">Personalizados</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Cartelería</h1>
+    <!-- Aquí puedes añadir contenido relacionado con cartelería -->
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> WHILOBUS</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="img/facebook.svg" alt="Facebook" />
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="img/instagram.svg" alt="Instagram" />
+      </a>
+      <a href="https://www.tiktok.com" target="_blank">
+        <img src="img/tiktok.svg" alt="TikTok" />
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+<script>
+    // Animación secuencial al cargar
+    window.addEventListener("load", () => {
+      const navItems = document.querySelectorAll(".navbar ul li");
+      navItems.forEach((item, index) => {
+        setTimeout(() => {
+          item.classList.add("animated");
+        }, index * 150);
+      });
+    });
+  </script>
+  
