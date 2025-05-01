@@ -1,0 +1,244 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background: #e6e6e6;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  text-decoration: none;
+  color: black;
+}
+
+.price {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  color: #008000;
+  text-decoration: none;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+  transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #ddd;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0.2);
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.detalle-producto {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.detalle-producto img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.descripcion {
+  text-align: left;
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+.descripcion li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.product-description {
+  list-style: none;
+  padding-left: 0;
+}
+
+.product-description li::before {
+  content: "● ";
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #e6e6e6;
+  padding: 0.5rem 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.navbar ul li {
+  margin: 0 10px; /* Espaciado entre los elementos */
+}
+
+.navbar ul li:not(:last-child) {
+  border-right: 2px solid #000; /* Línea vertical negra entre los elementos */
+  padding-right: 10px; /* Espacio entre el enlace y la línea */
+  height: 100%; /* Asegura que la línea ocupe toda la altura del elemento */
+  display: flex;
+  align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333; /* Color gris oscuro para las letras */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #555; /* Gris oscuro al pasar el ratón por encima */
+}
+
+/* Estilo de la animación */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); /* Desplazar el logo hacia arriba */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Aplica la animación al logo */
+.imagen-inicio img {
+  opacity: 0; /* Inicia con opacidad 0 */
+  animation: fadeIn 2s ease-out forwards; /* 2 segundos para la animación */
+}
+
+.navbar ul li {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.5s ease;
+}
+
+.navbar ul li.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navbar ul li a {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  transition: transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  transform: scale(1.1);
+}
+
+/* Línea debajo del enlace al hacer hover */
+.navbar ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: black; /* Línea debajo en negro */
+  transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+/* Menu hamburguesa para móviles */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+
+#navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+#navbar-links.active {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e6e6e6;
+  padding: 1rem;
+  text-align: center;
+}
+
+#navbar-links.active li {
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  #navbar-links {
+    display: none;
+  }
+}
