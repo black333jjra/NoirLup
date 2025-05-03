@@ -55,7 +55,7 @@ header {
   height: 35px;
   position: fixed;
   left: 10px;
-  top: 10px;
+  top: 5px;
   cursor: pointer;
   z-index: 1100;
 }
