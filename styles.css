@@ -187,14 +187,14 @@ header {
 }
 
 .menu-logo {
-  height: 15px;
+  height: 20px;
   width: auto;
 }
 
 .close-menu {
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 30px;
   cursor: pointer;
   color: #333;
 }
