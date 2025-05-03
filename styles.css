@@ -176,7 +176,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 20px 10px;
+  padding: 14px 45px 10px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -194,7 +194,7 @@ header {
 .close-menu {
   background: none;
   border: none;
-  font-size: 30px;
+  font-size: 24px;
   cursor: pointer;
   color: #333;
 }
