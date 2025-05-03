@@ -295,23 +295,23 @@ footer .social-icons a img {
 
 /* ============ CARRUSEL AUTOMÁTICO ============ */
 .carousel {
-  position: relative;
   overflow: hidden;
-  width: 100%;
-  height: 500px; /* Aumentamos la altura para adaptarse mejor a tu imagen vertical */
-  background-color: #fff; /* Opcional, para evitar parpadeos o fondo negro */
+  width: 100vw;
+  height: 60vh; /* Ajustable según cuánto quieras que ocupe */
+  position: relative;
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 2.5s ease-in-out; /* ← más lento */
-  will-change: transform;
+  width: 300vw;
+  height: 100%;
+  transition: transform 2.5s ease-in-out;
 }
 
 .carousel-track img {
-  width: 100vw;     /* Ocupa todo el ancho del viewport */
-  height: 100%;     /* Ocupa toda la altura del carrusel */
-  object-fit: contain; /* Muestra toda la imagen sin recortarla */
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
   flex-shrink: 0;
 }
 
