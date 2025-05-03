@@ -1,0 +1,369 @@
+/* ============ GENERAL ============ */
+/* Agregá esto en tu CSS (styles.css) */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Esto hace que ocupe todo el espacio restante */
+}
+
+/* ============ HEADER ============ */
+header {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to bottom, #ffffff 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-logo-mobile {
+  width: 100%;
+  text-align: center;
+}
+
+.header-logo-mobile img {
+  width: 70%;
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ============ BOTÓN HAMBURGUESA ============ */
+.menu-toggle {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  left: 10px;
+  top: 5px;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background-color: #333;
+  height: 3px;
+  width: 25px;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+  position: absolute;
+}
+
+.hamburger {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+.menu-toggle.active .hamburger {
+  background-color: transparent;
+}
+
+.menu-toggle.active .hamburger::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.menu-toggle.active .hamburger::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* ============ OVERLAY Y NAVBAR ============ */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: none;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 85%;
+  max-width: 320px;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 1050;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.navbar ul {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  display: block;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #f9f9f9;
+}
+
+.navbar a.hover-effect,
+.navbar a:focus {
+  color: #7f7f7f;
+  transform: translateX(5px);
+}
+
+/* ============ ENCABEZADO DEL MENÚ ============ */
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 45px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-logo-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.menu-logo {
+  height: 20px;
+  width: auto;
+}
+
+.close-menu {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  margin-left: 30px;
+  margin-right: 0px;
+}  
+
+/* ============ MAIN ============ */
+main {
+  padding: 0;
+  padding-top: 80px;
+}
+
+main h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+main p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  text-align: center;
+}
+
+main img {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============ GRILLA RESPONSIVE DE PRODUCTOS ============ */
+.product-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 600px) {
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ============ TARJETA DE PRODUCTO ============ */
+.product-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.product-card h1 {
+  font-size: 22px;
+  margin-top: 12px;
+}
+
+.product-card p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* ============ FOOTER ============ */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-section {
+  text-align: left;
+}
+
+.social-title {
+  font-size: 14px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 24px; /* Aumentado para más separación entre íconos */
+  justify-content: flex-start;
+}
+
+footer .social-icons a img {
+  width: 18px; /* Íconos más pequeños */
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+footer .social-icons a {
+  margin-right: 0; /* Ya no se necesita si estás usando gap */
+}
+
+.footer-line {
+  border-top: 1px solid #fff;
+  margin: 16px 0 8px; /* Más espacio arriba y poco abajo */
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 7px;
+  line-height: 1.4;
+}
+
+/* ============ PANTALLA INICIO CON LOGO ============ */
+.logo-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.logo-inicio img {
+  max-width: 80%;
+  height: auto;
+}
+
+/* ============ CARRUSEL AUTOMÁTICO ============ */
+.carousel {
+  overflow: hidden;
+  width: 100vw;
+  height: 60vh; /* Ajustable según cuánto quieras que ocupe */
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  width: 300vw;
+  height: 100%;
+  transition: transform 2.5s ease-in-out;
+}
+
+.carousel-track img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Animación del carrusel */
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(0%); }
+  36%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-100%); }
+  69%  { transform: translateX(-200%); }
+  99%  { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
