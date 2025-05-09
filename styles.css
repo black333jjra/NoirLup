@@ -369,13 +369,13 @@ footer .social-icons a {
 }
 .whatsapp-float {
   position: fixed;
-  bottom: 20px;
+  bottom: 70px;
   right: 20px;
   z-index: 9999;
   background: #fff;
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
