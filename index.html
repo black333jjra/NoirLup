@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WHILOBUS - Catálogo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Overlay para fondo oscuro -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <header>
+      <!-- Botón hamburguesa -->
+      <button
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        <span class="hamburger"></span>
+      </button>
+
+      <!-- Logo en el header -->
+      <div class="header-logo-mobile fade-scroll fade-scroll-up">
+        <img src="img/nuevo-logo.png" alt="Nuevo Logo para Móvil" />
+      </div>
+    </header>
+
+    <!-- Menú de navegación -->
+    <nav
+      class="navbar"
+      id="navbar-links"
+      role="navigation"
+      aria-label="Menú principal"
+    >
+      <div class="menu-header">
+        <div class="menu-logo-container">
+          <img src="img/nuevo-logo.png" alt="Logo del menú" class="menu-logo" />
+        </div>
+        <button
+          class="close-menu"
+          id="close-menu"
+          aria-label="Cerrar el menú lateral"
+        >
+          ✕
+        </button>
+      </div>
+
+      <ul class="fade-scroll fade-scroll-left">
+        <li><a href="carteles.html">Carteles Front & Backlight</a></li>
+        <li><a href="letras-corporeas.html">Letras Corpóreas</a></li>
+        <li><a href="totems.html">Tótems Publicitarios</a></li>
+        <li><a href="fachadas-acm.html">Fachadas en ACM</a></li>
+        <li><a href="volantes-tarjetas.html">Volantes - Tarjetas</a></li>
+        <li><a href="senaleticas.html">Señaléticas</a></li>
+        <li><a href="ploteados.html">Ploteados</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- HERO PRINCIPAL -->
+      <section class="hero">
+        <!-- Video de fondo -->
+        <video
+          class="video-fondo"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+        >
+          <source src="videos/video-fondo.mp4" type="video/mp4" />
+          Tu navegador no soporta la reproducción de video HTML5.
+        </video>
+
+        <!-- Título centrado sobre el video -->
+        <div class="hero-contenido fade-scroll fade-scroll-up">
+          <h1>
+            Soluciones gráficas que<br />
+            hablan por tu marca.
+          </h1>
+        </div>
+      </section>
+
+      <!-- CONTENIDO DEBAJO DEL VIDEO -->
+      <section class="contenido-post-video container">
+        <p class="fade-scroll fade-scroll-left">
+          Diseñamos, fabricamos e instalamos carteles, ploteados, letras
+          corpóreas y más para potenciar la presencia de tu marca.
+        </p>
+        <a href="#servicios" class="btn-servicios fade-scroll fade-scroll-scale"
+          >Ver Servicios</a
+        >
+      </section>
+
+      <!-- SERVICIOS DESTACADOS -->
+      <section id="servicios" class="servicios">
+        <div class="container">
+          <h2 class="fade-scroll fade-scroll-up">
+            Servicios Publicitarios Destacados
+          </h2>
+          <div class="grid-servicios">
+            <article class="fade-scroll fade-scroll-left">
+              <h3>Carteles Frontlight, Backlight y en ACM</h3>
+              <p>
+                Fabricación de carteles luminosos y rígidos para interior y
+                exterior. Alta visibilidad garantizada.
+              </p>
+              <a href="carteles.html" class="btn-ver-mas fade-scroll fade-scroll-scale">Ver más</a>
+            </article>
+            <article class="fade-scroll fade-scroll-left">
+              <h3>Ploteos de Vidrieras y Vehículos</h3>
+              <p>
+                Aplicación de vinilo de corte e impresión para negocios, autos,
+                furgones y más.
+              </p>
+              <a href="ploteados.html" class="btn-ver-mas fade-scroll fade-scroll-scale">Ver más</a>
+            </article>
+            <article class="fade-scroll fade-scroll-left">
+              <h3>Letras Corpóreas con o sin Iluminación</h3>
+              <p>
+                Soluciones visuales modernas en 3D, con iluminación LED frontal
+                o retroiluminada.
+              </p>
+              <a href="letras-corporeas.html" class="btn-ver-mas fade-scroll fade-scroll-scale">Ver más</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- VENTAJAS COMPETITIVAS -->
+      <section class="ventajas">
+        <div class="container">
+          <h2 class="fade-scroll fade-scroll-up">¿Por qué elegir WHILOBUS?</h2>
+          <ul class="fade-scroll fade-scroll-left">
+            <li>Atención personalizada en Ciudad del Este y alrededores.</li>
+            <li>Materiales premium y excelente acabado en cada proyecto.</li>
+            <li>Entrega rápida, instalación y soporte postventa.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- UBICACIÓN / MAPA -->
+      <section class="ubicacion">
+        <div class="container">
+          <h2 class="fade-scroll fade-scroll-up">
+            Ubicación de WHILOBUS en Ciudad del Este
+          </h2>
+          <p class="fade-scroll fade-scroll-left">
+            Nos encontramos en Ciudad del Este, Paraguay. Visitá nuestro local o
+            escribinos para asesoramiento gratuito.
+          </p>
+          <iframe
+            class="fade-scroll fade-scroll-scale"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.6668927593896!2d-54.64858822618436!3d-25.48279613497976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f685c6557b7e93%3A0xc694e781c6ee9a4!2sWhilobus!5e0!3m2!1ses-419!2spy!4v1748822987098!5m2!1ses-419!2spy"
+            width="100%"
+            height="200"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="fade-scroll fade-scroll-up">
+      <div class="footer-content">
+        <div class="social-section">
+          <p class="social-title fade-scroll fade-scroll-up">Redes Sociales</p>
+          <div class="social-icons fade-scroll fade-scroll-scale">
+            <a
+              href="https://www.facebook.com/profile.php?id=100085495839015&mibextid=ZbWKwL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="img/facebook.svg" alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="img/instagram.svg" alt="Instagram" />
+            </a>
+            <a
+              href="https://www.tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="img/tiktok.svg" alt="TikTok" />
+            </a>
+          </div>
+          <div class="footer-line"></div>
+          <p class="footer-text">
+            &copy; <span id="year"></span> WHILOBUS. Todos los derechos
+            reservados. Comercio de Servicios<br />
+            Publicitarios Ltda - Ciudad del Este, Km 5/2 La Blanca.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
