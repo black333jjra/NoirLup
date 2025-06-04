@@ -182,4 +182,6 @@ window.addEventListener('load', () => {
   });
 });
 
-
+document.querySelectorAll('.mini-carousel').forEach(carousel => {
+  initializeCarousel(carousel);
+});
