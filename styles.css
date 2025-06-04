@@ -290,7 +290,7 @@ footer .social-icons a img {
 
 .footer-text {
   text-align: center;
-  font-size: 7px;
+  font-size: 12px;
   line-height: 1.4;
 }
 
@@ -381,6 +381,27 @@ footer .social-icons a img {
 .carousel-btn.next {
   right: 10px;
 }
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #333;
+}
+
 
 @media (max-width: 768px) {
   .carousel-btn {
