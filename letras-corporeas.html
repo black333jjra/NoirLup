@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ploteados - WHILOBUS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <header>
+      <button
+        id="menu-toggle"
+        class="menu-toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        <span class="hamburger"></span>
+      </button>
+      <div class="header-logo-mobile animar fade-in-up">
+        <a href="index.html">
+          <img src="img/nuevo-logo.png" alt="Nuevo Logo para Móvil" />
+        </a>
+      </div>
+    </header>
+
+    <nav
+      class="navbar"
+      id="navbar-links"
+      role="navigation"
+      aria-label="Menú principal"
+    >
+      <div class="menu-header">
+        <div class="menu-logo-container">
+          <img src="img/nuevo-logo.png" alt="Logo del menú" class="menu-logo" />
+        </div>
+        <button
+          class="close-menu"
+          id="close-menu"
+          aria-label="Cerrar el menú lateral"
+        >
+          ✕
+        </button>
+      </div>
+      <ul class="animar slide-in-left">
+        <li><a href="carteles.html">Carteles Front & Backlight</a></li>
+        <li><a href="letras-corporeas.html">Letras Corpóreas</a></li>
+        <li><a href="totems.html">Tótems Publicitarios</a></li>
+        <li><a href="fachadas-acm.html">Fachadas en ACM</a></li>
+        <li><a href="volantes-tarjetas.html">Volantes - Tarjetas</a></li>
+        <li><a href="senaleticas.html">Señaléticas</a></li>
+        <li><a href="ploteados.html" class="active-link">Ploteados</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- Corpóreas Iluminación de Frente -->
+      <section class="page-title fade-scroll">
+        <h1>Corpóreas Iluminación de Frente</h1>
+        <p>
+          Letras corpóreas con iluminación frontal LED que realzan tu marca,
+          brindando alta visibilidad, impacto visual y un acabado profesional,
+          ideal para exteriores e interiores.
+        </p>
+      </section>
+
+      <section class="gallery fade-scroll">
+        <h2>Proyectos Terminados</h2>
+        <section class="carousel mini-carousel">
+          <button
+            class="carousel-btn prev animar fade-in"
+            aria-label="Anterior"
+          >
+            <img src="img/chevron-left.svg" alt="Flecha izquierda" />
+          </button>
+
+          <div class="carousel-track">
+            <img
+              src="img/letras-corporeas-iluminadas-frente-exterior.webp"
+              alt="Letras corpóreas con iluminación frontal LED en exterior"
+              loading="lazy"
+            />
+            <img
+              src="img/letras-corporeas-led-frontales-interior.webp"
+              alt="Letras corpóreas iluminadas con LED blanco en interior"
+              loading="lazy"
+            />
+            <img
+              src="img/letrero-corporeo-iluminado-frontal.webp"
+              alt="Cartel corpóreo con frente iluminado para comercio"
+              loading="lazy"
+            />
+          </div>
+
+          <button
+            class="carousel-btn next animar fade-in"
+            aria-label="Siguiente"
+          >
+            <img src="img/chevron-right.svg" alt="Flecha derecha" />
+          </button>
+
+          <div class="carousel-indicators">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+        </section>
+      </section>
+
+      <!-- Corpóreas Retroiluminado -->
+      <section class="page-title fade-scroll">
+        <h1>Corpóreas Retroiluminado</h1>
+        <p>
+          Letras corpóreas retroiluminadas con LED que generan un halo de luz
+          elegante, brindando un efecto sofisticado y distintivo ideal para
+          marcas que buscan destacar con estilo.
+        </p>
+      </section>
+
+      <section class="gallery fade-scroll">
+        <h2>Proyectos Terminados</h2>
+        <section class="carousel mini-carousel">
+          <button
+            class="carousel-btn prev animar fade-in"
+            aria-label="Anterior"
+          >
+            <img src="img/chevron-left.svg" alt="Flecha izquierda" />
+          </button>
+
+          <div class="carousel-track">
+            <img
+              src="img/letras-corporeas-retroiluminadas-led.webp"
+              alt="Letras corpóreas retroiluminadas con LED para fachada"
+              loading="lazy"
+            />
+            <img
+              src="img/letrero-retroiluminado-efecto-halo.webp"
+              alt="Cartel corpóreo con halo de luz blanca en fondo oscuro"
+              loading="lazy"
+            />
+            <img
+              src="img/letras-corporeas-backlight-corporativo.webp"
+              alt="Letras corpóreas retroiluminadas en oficina corporativa"
+              loading="lazy"
+            />
+          </div>
+
+          <button
+            class="carousel-btn next animar fade-in"
+            aria-label="Siguiente"
+          >
+            <img src="img/chevron-right.svg" alt="Flecha derecha" />
+          </button>
+
+          <div class="carousel-indicators">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+        </section>
+      </section>
+
+      <!-- Corpóreas en Acrílico -->
+      <section class="page-title fade-scroll">
+        <h1>Corpóreas en Acrílico</h1>
+        <p>
+          Letras en acrílico de alta calidad, ideales para interiores, con
+          acabado limpio y moderno que aporta profesionalismo y elegancia a tu
+          marca.
+        </p>
+      </section>
+
+      <section class="gallery fade-scroll">
+        <h2>Proyectos Terminados</h2>
+        <section class="carousel mini-carousel">
+          <button
+            class="carousel-btn prev animar fade-in"
+            aria-label="Anterior"
+          >
+            <img src="img/chevron-left.svg" alt="Flecha izquierda" />
+          </button>
+
+          <div class="carousel-track">
+            <img
+              src="img/letras-corporeas-acrilico-blanco.webp"
+              alt="Letras corpóreas en acrílico blanco para recepción"
+              loading="lazy"
+            />
+            <img
+              src="img/letrero-acrilico-corte-laser.webp"
+              alt="Cartel acrílico corpóreo con corte láser y fondo transparente"
+              loading="lazy"
+            />
+            <img
+              src="img/letras-acrilicas-interior-negocio.webp"
+              alt="Letras en acrílico negro instaladas en pared interior"
+              loading="lazy"
+            />
+          </div>
+
+          <button
+            class="carousel-btn next animar fade-in"
+            aria-label="Siguiente"
+          >
+            <img src="img/chevron-right.svg" alt="Flecha derecha" />
+          </button>
+
+          <div class="carousel-indicators">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="fade-scroll fade-scroll-up">
+      <div class="footer-content">
+        <div class="social-section">
+          <p class="social-title fade-scroll fade-scroll-up">Redes Sociales</p>
+          <div class="social-icons fade-scroll fade-scroll-scale">
+            <a
+              href="https://www.facebook.com/profile.php?id=100085495839015&mibextid=ZbWKwL"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="img/facebook.svg" alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="img/instagram.svg" alt="Instagram" />
+            </a>
+            <a
+              href="https://www.tiktok.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="img/tiktok.svg" alt="TikTok" />
+            </a>
+          </div>
+          <div class="footer-line"></div>
+          <p class="footer-text">
+            &copy; <span id="year"></span> WHILOBUS. Todos los derechos
+            reservados. Comercio de Servicios<br />
+            Publicitarios Ltda - Ciudad del Este, Km 5/2 La Blanca.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/595975854531"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat en WhatsApp"
+    >
+      <img src="img/whatsapp.svg" alt="WhatsApp" />
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://black333jjra.github.io/NoirLup/sitemap.xml
